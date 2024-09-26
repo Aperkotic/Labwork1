@@ -3,3 +3,11 @@
 echo "Write down the tag version"
 read -r tagversion
 echo $tagversion
+
+#Подтягиваем версии
+git checkout dev
+git pull origin dev
+git checkout prd
+git pull origin prd
+
+
