@@ -1,0 +1,5 @@
+#getting tag version
+
+echo "Write down the tag version"
+read -r tagversion
+echo $tagversion
