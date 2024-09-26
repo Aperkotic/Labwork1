@@ -5,10 +5,11 @@ read -r tagversion
 echo $tagversion
 
 #слияем ветки
-git check prd
+git checkout prd
 git merge dev
 
 #Создаем тэг
 git tag -a "$tagversion" -m "Version $tagversion"
 
+read -r checker
 
